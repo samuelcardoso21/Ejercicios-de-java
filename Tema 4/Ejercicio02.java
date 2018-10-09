@@ -1,4 +1,4 @@
-public class Ejercicio2 {
+public class Ejercicio02 {
 	public static void main(String [] args) {
 		System.out.println("¿Qué hora es?");
     System.out.print("Por favor introduzca solo un número del 1 al 24: ");

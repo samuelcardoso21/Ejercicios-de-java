@@ -1,4 +1,4 @@
-public class Ejercicio5 {
+public class Ejercicio05 {
   public static void main(String[] args) {
     System.out.println("Resolver ax + b = 0");
     System.out.print("Por favor introduzca el valor de a: ");

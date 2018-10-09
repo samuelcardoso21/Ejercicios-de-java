@@ -1,4 +1,4 @@
-public class Ejercicio3 {
+public class Ejercicio03 {
 	public static void main(String [] args) {
     System.out.print("Por favor introduca un número del 1 al 7: ");
     int dia =  Integer.parseInt(System.console().readLine());

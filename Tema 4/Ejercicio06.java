@@ -1,4 +1,4 @@
-public class Ejercicio6 {
+public class Ejercicio06 {
   final static double g = 9.81;
   public static void main(String[] args) {
     System.out.println("Calcular el tiempo que tarda en caer un objeto");

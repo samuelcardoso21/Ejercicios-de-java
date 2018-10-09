@@ -1,4 +1,4 @@
-public class Ejercicio8 {
+public class Ejercicio08 {
   public static void main(String[] args) {
     System.out.println("Calcular media de 3 notas");
     System.out.print("Por favor inserte la primera nota: ");

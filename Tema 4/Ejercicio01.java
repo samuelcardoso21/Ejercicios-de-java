@@ -1,4 +1,4 @@
-public class Ejercicio1 {
+public class Ejercicio01 {
 	public static void main(String [] args) {
 		System.out.print("Escriba un día entre el Lunes y el Viernes: ");
 		String respuesta = System.console().readLine();

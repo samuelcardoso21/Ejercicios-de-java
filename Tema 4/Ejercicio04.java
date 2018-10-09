@@ -1,4 +1,4 @@
-public class Ejercicio4 {
+public class Ejercicio04 {
   public static void main(String[] args) {
     int sueldoSemanal;
     System.out.print("Introduzca el número de horas trabajadas en la semana: ");
