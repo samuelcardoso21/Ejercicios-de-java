@@ -8,6 +8,7 @@ public class Ejercicio25 {
       volteado = (volteado * 10) + (numero % 10);
       numero /= 10;
     }
-    System.out.println("Si le damos la vuelta al " + numeroIntroducido + " tenemos el " + volteado);
+    System.out.print("Si le damos la vuelta al " + numeroIntroducido);
+    System.out.println(" tenemos el " + volteado);
   }
 }
