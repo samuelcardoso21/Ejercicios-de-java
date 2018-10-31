@@ -11,27 +11,45 @@ package tema06;
  */
 public class Ejercicio02 {
   public static void main(String[] args) {
-    int palo = (int) ((Math.random() * 4) + 1);
-    int numero = (int) ((Math.random() * 12) + 1);
-    String corazones = "corazones";
-    String diamantes = "diamantes";
-    String picas = "picas";
-    String treboles = "treboles";
-    switch (palo) {
+    int numeroPalo = (int) ((Math.random() * 4) + 1);
+    int numeroFigura = (int) ((Math.random() * 13) + 1);
+    String nombrePalo = "";
+    String nombreFigura = "";
+    
+    switch (numeroFigura) {
+      case 1: 
+        nombreFigura = "as";
+        break;
+      case 11:
+        nombreFigura = "J";
+        break;
+      case 12:
+        nombreFigura = "Q";
+        break;
+      case 13:
+        nombreFigura = "K";
+        break;
+      default:
+      nombreFigura = String.valueOf(numeroFigura);
+      
+    }
+        
+    
+    switch (numeroPalo) {
       case 1:
-        String.valueOf(corazones);
+        nombrePalo = "corazones";
         break;
       case 2:
-       String.valueOf(diamantes);
+        nombrePalo = "diamantes";
         break;
       case 3:
-        String.valueOf(picas);
+        nombrePalo = "picas";
         break;
       case 4:
-        String.valueOf(treboles);
+        nombrePalo = "tréboles";
         break;
       default:
     }
-    System.out.println("Su carta generada es el " + numero + " de " + palo);
+    System.out.println("Su carta generada es: " + nombreFigura + " de " + nombrePalo);
   }
 }
