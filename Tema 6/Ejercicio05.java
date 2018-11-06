@@ -19,7 +19,7 @@ public class Ejercicio05 {
     int minimo = 199;
     int maximo = 100;
     for (int contador = 0; contador < 50; contador++) {
-      int numero = (int) (Math.random() * 100) + 100;
+      int numero = (int) (Math.random() * 51) * 2;
       suma += numero;
       System.out.print(numero + " ");
       if (numero < minimo) {
