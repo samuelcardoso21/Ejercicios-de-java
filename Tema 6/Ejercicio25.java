@@ -16,14 +16,29 @@ public class Ejercicio25 {
    */
   public static void main(String[] args) {
     
-    int aleatorio = 0;
+    int aleatorio;
+    boolean esPrimo = true;
+    
     
     for (int i = 1; i <=100; i++) {
       aleatorio = (int) (Math.random() * 191) + 10;
-      if aleatorio ()
-      System.out.print(aleatorio + " ");
+      
+      for (int j = 2; j < aleatorio; j++) {
+        if (aleatorio % j == 0) {
+          esPrimo = false;
+        }
+      }
+      
+      if ((esPrimo) && (aleatorio != 5)) {
+      System.out.print("#" + aleatorio + "# ");
+      } else if (aleatorio % 5 == 0 && aleatorio != 5) {
+        System.out.print("[" + aleatorio + "] ");
+      } else if (aleatorio == 5) {
+        System.out.print("#[5]#");
+      } else {
+        System.out.print(aleatorio + " ");
+      }
     }
-    
   }
   
 }
