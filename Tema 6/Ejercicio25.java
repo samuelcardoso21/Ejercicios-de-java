@@ -33,8 +33,6 @@ public class Ejercicio25 {
       System.out.print("#" + aleatorio + "# ");
       } else if (aleatorio % 5 == 0 && aleatorio != 5) {
         System.out.print("[" + aleatorio + "] ");
-      } else if (aleatorio == 5) {
-        System.out.print("#[5]#");
       } else {
         System.out.print(aleatorio + " ");
       }
