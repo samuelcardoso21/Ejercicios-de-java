@@ -22,7 +22,6 @@ public class Ejercicio11 {
     int[] n = new int[10];
     int[] ordenado = new int[10];
     int i;
-    boolean esPrimo = false;
     int p;
     
     for (i = 0; i < 10; i++) {
@@ -30,43 +29,35 @@ public class Ejercicio11 {
       n[i] = Integer.parseInt(s.nextLine());
     }
     
-    System.out.println("");
+    System.out.println("\nArray original:");
     
-    System.out.println("Array original:");
-      for (i = 0; i < 10; i++) {
-        System.out.printf("|%3d ", i);
-      }
-      System.out.println("|");
-      for (i = 0; i < 50; i++) {
-        System.out.print("⎯");
-      }
-      System.out.println("⎯");
-      for (i = 0; i < 10; i++) {
-        System.out.printf("|%3d ", n[i]);
-      }
-     
-      
-      System.out.println("|");
-      System.out.println("");
-      System.out.println("Array final");
+    for (i = 0; i < 10; i++) {
+      System.out.printf("|%3d ", i);
+    }
+    System.out.println("|");
+    for (i = 0; i < 50; i++) {
+      System.out.print("⎯");
+    }
+    System.out.println("⎯");
+    for (i = 0; i < 10; i++) {
+      System.out.printf("|%3d ", n[i]);
+    }
+    
+    System.out.println("|");
+    System.out.println("");
+    System.out.println("Array final");
     int j = 9;
     int h = 0;
     for (i = 0; i < 10; i++) {
-      esPrimo = true;
-      for (p = 2; p < n[i] - 1; p++) {
-        if (n[i] % p == 0) {
-          esPrimo = false;
-        }
-      }      
-    } 
-      if (esPrimo) {
+      
+      if (esPrimo(n[i])) {
         ordenado[h] = n[i];
         h++;
       } else {
-          ordenado[j] = n[i];
-          j--;
+        ordenado[j] = n[i];
+        j--;
       }
-    
+    } 
     
       for (i = 0; i < 10; i++) {
         System.out.printf("|%3d ", i);
@@ -84,4 +75,21 @@ public class Ejercicio11 {
       
   }
   
+  
+  public static Boolean esPrimo(int numero)
+  {
+      Boolean esPrimoActual = true;
+      if(numero<2)
+      {
+          esPrimoActual = false;
+      }
+      else
+      {
+          for(int x=2; x*x<=numero; x++)
+          {
+              if( numero%x==0 ){esPrimoActual = false;break;}
+          }
+      }
+      return esPrimoActual;
+  }
 }
