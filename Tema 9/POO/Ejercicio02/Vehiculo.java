@@ -11,8 +11,26 @@ package POO.Ejercicio02;
  */
 public class Vehiculo {
   
-  private static int vehiculosCreados;
-  private static int kilometrosTotales;
+  private static int vehiculosCreados = 0;
+  private static int kilometrosTotales = 0;
   
-  int kilometrosRecorridos;
+  private int kilometrosRecorridos;
+
+  public Vehiculo() {
+    this.kilometrosRecorridos = 0;
+  }
+
+  public static int getKilometrosTotales() {
+    return kilometrosTotales;
+  }
+
+  public int getKilometrosRecorridos() {
+    return kilometrosRecorridos;
+  }
+  
+  public void recorre(int k) {
+    this.kilometrosRecorridos += k;
+    Vehiculo.kilometrosTotales += k;
+  }
+  
 }

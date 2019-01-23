@@ -14,12 +14,8 @@ public class Bicicleta extends Vehiculo {
   String color;
   int anoFabricacion;
   
-  void anda(int metros) {
-    System.out.println("Andas con la bicicleta " + metros + " metros");
-  }
-  void caballito(int metros) {
-    System.out.println("Haces el caballito con la bicicleta " + metros + " "
-            + "metros");
+  void caballito() {
+    System.out.println("*Haces el caballito con la bicicleta sin avanzar*");
   }
 
   public Bicicleta(String color, int anoFabricacion) {

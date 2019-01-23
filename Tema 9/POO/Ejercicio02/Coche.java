@@ -16,11 +16,9 @@ public class Coche extends Vehiculo {
   String color;
   int anoFabricacion;
   
-  void anda(int metros) {
-    System.out.println("Andas con el coche " + metros + " metros");
-  }
   void quemaRueda() {
-    System.out.println("Quemas rueda con el coche sin avanzar");
+    System.out.println("*Quemas rueda con el coche sin avanzar*");
+    System.out.println("Fffffffffsssssshhhh");
   }
 
   public Coche(String marca, String modelo, String color, int anoFabricacion) {
@@ -29,39 +27,5 @@ public class Coche extends Vehiculo {
     this.color = color;
     this.anoFabricacion = anoFabricacion;
   }
-
-  public String getMarca() {
-    return marca;
-  }
-
-  public void setMarca(String marca) {
-    this.marca = marca;
-  }
-
-  public String getModelo() {
-    return modelo;
-  }
-
-  public void setModelo(String modelo) {
-    this.modelo = modelo;
-  }
-
-  public int getAnoFabricacion() {
-    return anoFabricacion;
-  }
-
-  public void setAnoFabricacion(int anoFabricacion) {
-    this.anoFabricacion = anoFabricacion;
-  }
-
-  public int getKilometrosRecorridos() {
-    return kilometrosRecorridos;
-  }
-
-  public void setKilometrosRecorridos(int kilometrosRecorridos) {
-    this.kilometrosRecorridos = kilometrosRecorridos;
-  }
-  
-  
   
 }
